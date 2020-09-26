@@ -1,10 +1,4 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
+# Reproducible Research: Peer Assessment 1
 
 ## Introduction
 This assignment makes use of data from a personal activity monitoring device.
@@ -70,7 +64,7 @@ hist(sum_by_day$Steps, breaks = 20,
      col = "skyblue", xlim = c(0, 25000))
 ```
 
-![](PA1_template_files/figure-html/firstpart-1.png)<!-- -->
+![plot of chunk firstpart](figure/firstpart-1.png)
 
 The **mean** of the the total number of steps taken per day is **9354.2295082**.  
 The **median** of the the total number of steps taken per day is **10395**.  
@@ -100,7 +94,7 @@ plot(x = sum_by_interval$Interval,
      main = "Average number of steps taken per 5-min interval")
 ```
 
-![](PA1_template_files/figure-html/secondpart-1.png)<!-- -->
+![plot of chunk secondpart](figure/secondpart-1.png)
 
 The interval **835** contains the maximum number of steps averaged across all the days in the dataset.  
 
@@ -141,11 +135,11 @@ hist(sum_by_day2$Steps, breaks = 20,
      col = "skyblue", xlim = c(0, 25000), ylim = c(0,20))
 ```
 
-![](PA1_template_files/figure-html/thirdpart-1.png)<!-- -->
+![plot of chunk thirdpart](figure/thirdpart-1.png)
 
 The total number of missing values in the dataset is **2304**. They are replaced with the mean for that 5-minute interval across days.  
-For this new *Imputed Dataset*, the **mean** of total number of steps taken per day is **1.0766189\times 10^{4}**.  
-Also, the **median** of total number of steps taken per day is **1.0766189\times 10^{4}**.  
+For this new *Imputed Dataset*, the **mean** of total number of steps taken per day is **1.0766189 &times; 10<sup>4</sup>**.  
+Also, the **median** of total number of steps taken per day is **1.0766189 &times; 10<sup>4</sup>**.  
 Comparing with the calculations done in the first section of this document, we observe that both mean and median has increased after data imputing.  
 
 
@@ -196,5 +190,5 @@ plot(x = weekend_data$Interval,
 legend("topright", legend = "Weekend", lty = "solid", col = "purple", bty = "n")
 ```
 
-![](PA1_template_files/figure-html/fourthpart-1.png)<!-- -->
+![plot of chunk fourthpart](figure/fourthpart-1.png)
 
